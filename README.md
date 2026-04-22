@@ -15,7 +15,7 @@ This repo holds the public web pages needed for the Hysj rollout:
 
 - Next.js with the App Router
 - TypeScript
-- Vercel-ready deployment
+- GitHub Pages deployment through GitHub Actions
 
 ## Local development
 
@@ -24,6 +24,15 @@ npm install
 npm run dev
 ```
 
+## GitHub Pages
+
+This site is configured for static export and GitHub Pages deployment.
+
+- repository URL: `https://github.com/Kjellhaakon/hysj-web`
+- default Pages URL: `https://kjellhaakon.github.io/hysj-web/`
+
+The repository must be public on GitHub Free for Pages to publish.
+
 ## Before publishing
 
 Replace the placeholder values in `site-config.ts`:
@@ -31,4 +40,4 @@ Replace the placeholder values in `site-config.ts`:
 - `supportEmail`
 - `privacyEmail`
 
-Then connect the repo to Vercel and use the deployed URLs from this site in the mobile app legal-link environment variables.
+Then use the deployed GitHub Pages URLs from this site in the mobile app legal-link environment variables.
